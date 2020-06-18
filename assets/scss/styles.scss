@@ -1,0 +1,32 @@
+.cursor-poiter {
+  cursor: pointer;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-right-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-left-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//max-wight
+@for $i from 10 through 1200 {
+  .max-width-#{$i} {
+    max-width: 0px + $i;
+  }
+}

@@ -1,0 +1,68 @@
+$--color-success: #19BE6B !default;
+$--color-warning: #FF9900 !default;
+$--color-danger: #F5222D !default;
+$--color-info: #17233D !default;
+
+@import "~element-ui/packages/theme-chalk/src/index.scss";
+
+//@include b(popup-parent) {
+//  @include m(hidden) {
+//    overflow: hidden;
+//    height: 100vh;
+//  }
+//}
+
+@include b(drawer) {
+  overflow-y: auto;
+}
+
+@include b(side-bar) {
+  position: fixed;
+}
+
+@include b(header) {
+  line-height: 60px;
+}
+
+@include b(main) {
+  background-color: #f0f4f8;
+  color: #000;
+}
+@include b(menu) {
+  border-right: 0;
+}
+@include b(menu-vertical) {
+  overflow: auto;
+  height: calc(100vh - 60px);
+  padding-bottom: 40px;
+}
+
+@include b(aside) {
+  transition: all .3s;
+  color: #333;
+}
+.el-menu-vertical:not(.el-menu--collapse) {
+  width: 200px;
+}
+
+.el-menu-item, .el-submenu__title {
+  font-size: 13px !important;
+}
+.el-input__inner {
+  font-size: 12px;
+}
+.el-select, .el-input-number, .el-input, .el-date-editor.el-input {
+  width: 100%;
+}
+.el-input-number .el-input__inner {
+  text-align: left;
+}
+
+.table td,
+.table th {
+
+  & .el-drawer {
+    white-space: normal;
+    word-break: break-all;
+  }
+}
